@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focal Point</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a id="navbar__logo" class="navbar-logo">FOCAL POINT</a>
+        <a id="navbar__point__counter" class="navbar-logo" style="font-size: 1rem">Total Points: XX</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="#home" class="navbar__links" id="home-page">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#about" class="navbar__links" id="about-page">About</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#services" class="navbar__links" id="services-page"
+              >Surveys</a>
+          </li>
+          <li class="navbar__item">
+            <a href="#shops" class="navbar__links" id="shops-page">Shops</a>
+          </li>
+          <!-- <li class="navbar__item">
+            <a class="navbar__links" id="signup">Login</a>
+          </li> -->
+          <li class="navbar__item center__btn">
+            <button class="button" style="max-height: 40px; font-size: 19px;" id="login">Login</button>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__links" id="user"
+              >Welcome,User!</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+<!-- LOGIN -->
+    <div id="login-modal" class="signup-modal-wrapper">
+      <div class="modal">
+        <div>
+          <i id="close-login" class="fa fa-2x fa-times"></i>
+        </div>
+        <div id="signup-form">
+          <h2>Login with Email</h2>
+          <form action="#">
+            <input class="form-control" type="text" placeholder="Email" id="email">
+            <input class="form-control" type="password" placeholder="Password" id="password">
+            <!-- <div id="submit-btn">Sign up</div> -->
+            <input id="submit-btn" type="button" value="Login"> <!--onclick="openSignup();"-->
+            <div>
+              <span> Don't have an account? </span>
+              <a href="#" id="create-acc"> Create account </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<!-- SIGNUP -->
+    <div id="signup-modal" class="signup-modal-wrapper">
+      <div class="modal">
+        <div>
+          <i id="close-signup" class="fa fa-2x fa-times"></i>
+        </div>
+        <div id="signup-form">
+          <h2>Signup with Email</h2>
+          <form action="#">
+            <input class="form-control" type="name" placeholder="name" id="name">
+            <input class="form-control" type="text" placeholder="Email" id="email_signup">
+            <input class="form-control" type="password" placeholder="Password" id="password_signup">
+            <input class="form-control" type="password" placeholder="confirm password" id="confirm_password">
+            <input class="button" style="display: initial;" id="openSignup" type="button" value="Signup"> <!--onclick="openSignup();"-->
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+    <div id="contact_us" class="signup-modal-wrapper">
+      <div class="modal">
+        <div>
+          <i id="close-contact" class="fa fa-2x fa-times"></i>
+        </div>
+        <div id="signup-form">
+          <h2>For more information,</h2>
+          <h2>please contact us at</h2>
+          <h1>021 123456</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero" id="home">
+      <div class="hero__container">
+        <h1 class="hero__heading">Fill a survey and get <span> FOCAL POINTS</span></h1>
+        <p class="hero__description">Rewards are guaranteed</p>
+        <button class="main__btn"><a href="#about">Explore</a></button>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="main" id="about">
+      <div class="main__container">
+        <div class="main__img--container">
+          <div class="main__img--card"><i class="fas fa-layer-group"></i></div>
+        </div>
+        <div class="main__content">
+          <h1>What do we do?</h1>
+          <h2>We help businesses to promote their online surveys, while also helping people that wants to fill surveys with a guaranteed reward</h2>
+          <p>If you are from a company/business, submit your surveys below</p>
+          <button class="main__btn" id="main__btn"><a>Submit Survey</a></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="services" id="services">
+      <h1>Surveys</h1>
+      <div class="services__wrapper">
+        <div class="services__card">
+          <h2>Survey by bla2</h2>
+          <h3>XX Points</h3>
+          <p>Survey 1</p>
+          <div class="services__btn"><button><a href="../Fill_a_Survey/survey.html">Fill In</a></button></div>
+        </div>
+        <div class="services__card">
+          <h2>Survey by bla2</h2>
+          <h3>XX Points</h3>
+          <p>Survey 2</p>
+          <div class="services__btn"><button><a href="../Fill_a_Survey/survey.html">Fill In</a></button></div>
+        </div>
+        <div class="services__card">
+          <h2>Survey by bla2</h2>
+          <h3>XX Points</h3>
+          <p>Survey 3</p>
+          <div class="services__btn"><button><a href="../Fill_a_Survey/survey.html">Fill In</a></button></div>
+        </div>
+        <div class="services__card">
+          <h2>Survey by bla2</h2>
+          <h3>XX Points</h3>
+          <p>Survey 4</p>
+          <div class="services__btn"><button><a href="../Fill_a_Survey/survey.html">Fill In</a></button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shops Section -->
+    <div class="shops" id="shops">
+      <h1>Shops</h1>
+      <div class="shops__wrapper">
+        <div class="shops__card">
+          <h2>Voucher 5rb</h2> 
+          <h2>Voucher 20rb</h2>
+          <h2>Voucher 50rb</h2>
+          <p>INDIMARET</p>
+          <div class="shops__btn"><button><a href="../shop/shop.html">Claim Now!</a></button></div>
+        </div>
+        <div class="shops__card">
+          <h2>Voucher 5rb</h2>
+          <h2>Voucher 20rb</h2>
+          <h2>Voucher 50rb</h2>
+          <p>ALPHAMALET</p>
+          <div class="shops__btn"><button><a href="../shop/shop.html">Claim Now!</a></button></div>
+        </div>
+        <div class="shops__card">
+          <h2>Voucher 5rb</h2>
+          <h2>Voucher 20rb</h2>
+          <h2>Voucher 50rb</h2>
+          <p>CIRCLE O</p>
+          <div class="shops__btn"><button><a href="../shop/shop.html">Claim Now!</a></button></div>
+        </div>
+        <div class="shops__card">
+          <h2>Voucher 5rb</h2>
+          <h2>Voucher 20rb</h2>
+          <h2>Voucher 50rb</h2>
+          <p>DOMYSTIQUE</p>
+          <div class="shops__btn"><button><a href="../shop/shop.html">Claim Now!</a></button></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="main" id="sign-up">
+      <div class="main__container" id="sign-off">
+        <div class="main__content">
+          <h1>Join Our Team</h1>
+          <h2>Sign Up Today</h2>
+          <p>And Submit Your Surveys</p>
+          <button class="main__btn signup-show"><a>Sign Up</a></button>
+        </div>
+        <div class="main__img--container">
+          <div class="main__img--card" id="card-2">
+            <i class="fas fa-users"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+      <div class="footer_sho_links">
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>About Us</h2>
+            <a href="/sign__up">How it works</a> <a href="/">Testimonials</a>
+            <a href="/">Careers</a> <a href="/">Terms of Service</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Contact Us</h2>
+            <a href="/">Contact</a> <a href="/">Support</a>
+            <a href="/">Destinations</a>
+          </div>
+        </div>
+        <div class="footer__link--wrapper">
+          <div class="footer__link--items">
+            <h2>Videos</h2>
+            <a href="/">Submit Video</a> <a href="/">Ambassadors</a>
+            <a href="/">Agency</a>
+          </div>
+          <div class="footer__link--items">
+            <h2>Social Media</h2>
+            <a href="/">Instagram</a> <a href="/">Facebook</a>
+            <a href="/">Youtube</a> <a href="/">Twitter</a>
+          </div>
+        </div>
+      </div>
+      <section class="social__media">
+        <div class="social__media--wrap">
+          <div class="footer__logo">
+            <a href="/" id="footer__logo">FOCAL POINT</a>
+          </div>
+          <p class="website__rights">© FOCAL POINT 2022. All rights reserved</p>
+          <div class="social__icons">
+            <a href="/" class="social__icon--link" target="_blank"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="/" class="social__icon--link"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
