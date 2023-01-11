@@ -1,6 +1,6 @@
 * Live link website : https://tirzagabriella.github.io/HCI_FocalPoint/
 * Code : https://github.com/tirzagabriella/HCI_FocalPoint
-* Demo Video Link : 
+* Demo Video Link : https://drive.google.com/file/d/1p_IPHltuv15QD0Y0tuuDEhay1CICvFbf/view
 
 Course: Human Computer Interaction - Final Project
 
